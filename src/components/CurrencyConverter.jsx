@@ -9,7 +9,7 @@ const CurrencyConverter = () => {
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const convertHandler = () => {
-    fetch("https://currency-exchange-backend.azurewebsites.net/convert", {
+    fetch("https://currency-exchange-backend.azurewebsites.net/api/convert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
